@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main_rel_layout"
-    android:background="?android:attr/colorBackground"
-    android:padding="4dp">
+    android:background="?android:attr/colorBackground">
 
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:titleTextColor="?attr/colorAppTitle"
+            android:title="@string/app_name" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/todo_recycler"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingHorizontal="4dp"
+        android:paddingTop="4dp"/>
 
     <ImageButton
         android:id="@+id/add_task_btn"

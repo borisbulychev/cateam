@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.todoapp.databinding.ActivityMainBinding
 import com.google.gson.GsonBuilder
 import kotlinx.coroutines.runBlocking
-
+import androidx.appcompat.widget.Toolbar;
 
 class MainActivity : AppCompatActivity() {
     private val gson = GsonBuilder().create()
@@ -49,6 +49,8 @@ class MainActivity : AppCompatActivity() {
             resultLauncher.launch(intent)
         }
 
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
 
     }
 

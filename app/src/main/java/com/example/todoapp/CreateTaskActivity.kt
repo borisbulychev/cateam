@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.CalendarView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.example.todoapp.databinding.ActivityCreateTaskBinding
 import com.google.gson.GsonBuilder
 import java.time.LocalDate
@@ -24,6 +25,9 @@ class CreateTaskActivity : AppCompatActivity() {
         val gson = GsonBuilder().create()
         val binding = ActivityCreateTaskBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
 
         spinnerItems = listOf(
             SpinnerItem(R.drawable.low_importance_checkbox_background, "low"),
