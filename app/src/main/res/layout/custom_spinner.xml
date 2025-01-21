@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/spinner_item_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/low_importance_checkbox_background"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_height="40dp"
+        android:background="@color/grey"
+        android:alpha="0.5"/>
+
+    <TextView
+        android:id="@+id/spinner_item_text"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"/>
+
+</LinearLayout>

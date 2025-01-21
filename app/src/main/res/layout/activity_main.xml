@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_rel_layout"
+    android:background="?android:attr/colorBackground"
+    android:padding="4dp">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/todo_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageButton
+        android:id="@+id/add_task_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/add_button"
+        android:contentDescription="add_task" />
+
+
+</RelativeLayout>

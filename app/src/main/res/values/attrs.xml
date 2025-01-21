@@ -1,0 +1,4 @@
+<resources>
+    <attr name="colorAppTitle" format="color" />
+    <attr name="colorText" format="color" />
+</resources>

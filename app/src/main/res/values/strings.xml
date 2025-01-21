@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Todo App</string>
+    <string name="special_checkbox">special checkbox</string>
+    <string name="new_task">new</string>
+    <string name="task_hint">to do?</string>
+    <string name="delete_btn_text">delete</string>
+    <string name="layout_creation_name">Task</string>
+    <string name="cancel_btn_text">Cancel</string>
+    <string name="accept_btn_text">Save</string>
+    <string name="deadline_field">deadline</string>
+    <string name="importance_field">priority</string>
+    <string name="task_mark_text">mark as done</string>
+
+    <string-array name="importance_array">
+        <item>low</item>
+        <item>mid</item>
+        <item>high</item>
+    </string-array>
+</resources>
